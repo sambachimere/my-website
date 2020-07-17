@@ -62,6 +62,10 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="About-image">
+        <div className="About-image-block" />
+        <div className="About-image-yellowForm"></div>
+      </div>
     </div>
   );
 };

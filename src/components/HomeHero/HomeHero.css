@@ -38,7 +38,7 @@
 
 .HomeHero-contact {
   padding: 10px;
-  border: 1px solid #e1ae00;
+  border: 2px solid #e1ae00;
   text-align: center;
   border-radius: 3px;
 }
@@ -46,7 +46,7 @@
 .HomeHero-contact-text {
   margin: 0px;
   color: #e1ae00;
-  font-weight: lighter;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
