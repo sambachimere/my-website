@@ -4,6 +4,7 @@ import './App.css';
 
 import Sidebar from './components/Sidebar/Sidebar';
 import HomeHero from './components/HomeHero/HomeHero';
+import About from './components/About/About';
 
 const App = () => {
   return (
@@ -11,12 +12,13 @@ const App = () => {
       <Sidebar />
       <HomeHero />
       <div className="SocialNetworks">
-        <div>
-          <FaLinkedinIn />
-          <FaGithub />
+        <div className="SocialNetworks-icons">
+          <FaLinkedinIn className="SocialNetworks-icon" />
+          <FaGithub className="SocialNetworks-icon" />
         </div>
         <span className="SocialNetworks-line"></span>
       </div>
+      <About />
     </div>
   );
 };
