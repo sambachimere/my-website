@@ -1,0 +1,51 @@
+.HomeHero {
+  padding-left: 200px;
+  padding-top: 63px;
+}
+
+.HomeHero-hello {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.HomeHero-myName {
+  color: #e1ae00;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.HomeHero-iAm {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.HomeHero-quickPres {
+  color: #757575;
+  font-size: 24px;
+}
+
+.HomeHero-callToActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HomeHero-contact {
+  padding: 10px;
+  border: 1px solid #e1ae00;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.HomeHero-contact-text {
+  margin: 0px;
+  color: #e1ae00;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.HomeHero-myWork-text {
+  color: #fff;
+  font-weight: normal;
+}
