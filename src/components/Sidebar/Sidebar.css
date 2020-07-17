@@ -1,0 +1,39 @@
+.Sidebar-nav {
+  background-color: #111111;
+  width: 154px;
+  height: 100vh;
+  position: fixed;
+  box-sizing: border-box;
+  padding: 120px 20px 0px 20px;
+}
+
+.Sidebar-nav-item {
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.Sidebar-nav-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.Sidebar-period {
+  font-size: 25px;
+  margin-left: 4px;
+  color: #E1AE00;
+}
+
+.Sidebar-resume {
+  padding: 10px;
+  border: 1px solid #E1AE00;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.Sidebar-resume-text {
+  margin: 0px;
+  color: #E1AE00;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
