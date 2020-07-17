@@ -1,6 +1,7 @@
 .HomeHero {
   padding-left: 200px;
   padding-top: 63px;
+  padding-right: 515px;
 }
 
 .HomeHero-hello {
@@ -24,11 +25,15 @@
 .HomeHero-quickPres {
   color: #757575;
   font-size: 24px;
+  line-height: 35px;
+  text-align: justify;
+  margin-bottom: 48px;
 }
 
 .HomeHero-callToActions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .HomeHero-contact {
@@ -45,7 +50,19 @@
   letter-spacing: 1px;
 }
 
+.HomeHero-myWork-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .HomeHero-myWork-text {
   color: #fff;
   font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.HomeHero-myWork-icon {
+  color: #fff;
+  font-size: 25px;
 }

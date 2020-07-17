@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoMdArrowDropdown } from 'react-icons/io';
 import './HomeHero.css';
 
 const HomeHero = () => {
@@ -14,10 +15,13 @@ const HomeHero = () => {
       </p>
       <div className="HomeHero-callToActions">
         <div className="HomeHero-contact">
-          <h3 className="HomeHero-contact-text">Resume</h3>
+          <h3 className="HomeHero-contact-text">Get in touch</h3>
         </div>
         <div className="HomeHero-myWork">
-          <h3 className="HomeHero-myWork-text">See how I can help!</h3>
+          <div className="HomeHero-myWork-inner">
+            <h3 className="HomeHero-myWork-text">See how I can help!</h3>
+            <IoMdArrowDropdown className="HomeHero-myWork-icon" />
+          </div>
         </div>
       </div>
     </div>

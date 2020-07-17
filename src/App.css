@@ -1,0 +1,14 @@
+.SocialNetworks {
+  position: relative;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SocialNetworks-line {
+  height: 140px;
+  display: block;
+  width: 1px;
+  background-color: #e1ae00;
+}
