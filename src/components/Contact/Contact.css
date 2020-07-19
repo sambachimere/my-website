@@ -1,0 +1,51 @@
+.Contact {
+  padding-left: 200px;
+  padding-top: 63px;
+  margin-bottom: 100px;
+}
+
+.Contact-block-title {
+  color: #fff;
+  text-shadow: 0px -19px rgba(255, 255, 255, 0.11);
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.Contact-form {
+  width: 1000px;
+}
+
+.Contact-emailAndPhone {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+div .Contact-button {
+  background-color: #e1ae00;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+div .Contact-email {
+  margin-right: 40px;
+}
+
+div .Contact-phone {
+  margin-left: 40px;
+}
+
+.MuiFormControl-root .MuiInputLabel-outlined {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-input {
+  color: #fff;
+}

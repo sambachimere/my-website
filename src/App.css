@@ -5,7 +5,7 @@
 .SocialNetworks {
   position: absolute;
   left: 89%;
-  bottom: 0%;
+  bottom: -100px;
   display: flex;
   flex-direction: column;
   align-items: center;

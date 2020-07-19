@@ -7,6 +7,7 @@ import HomeHero from './components/HomeHero/HomeHero';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Experience />
       <Portfolio />
+      <Contact />
       <div className="SocialNetworks">
         <div className="SocialNetworks-icons">
           <FaLinkedinIn className="SocialNetworks-icon" />
