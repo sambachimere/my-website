@@ -51,7 +51,7 @@
 }
 
 .About-image-block {
-  background-image: url(/static/media/me.f2b4b1f5.jpg);
+  background-image: url('../../assets/images/me.jpg');
   height: 220px;
   width: 325px;
   background-repeat: no-repeat;

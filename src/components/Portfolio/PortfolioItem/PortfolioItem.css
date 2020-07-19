@@ -1,0 +1,40 @@
+.PortfolioItem {
+  position: relative;
+}
+
+.PortfolioItem-image {
+  background-image: url('../../../assets/images/serin.png');
+  height: 220px;
+  width: 390px;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.PortfolioItem-yellowRectangle {
+  background-color: #e1ae00;
+  border-radius: 3px;
+  height: 220px;
+  width: 390px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 11%;
+  left: 7%;
+  z-index: -1;
+}
+
+.PortfolioItem-projectType {
+  margin: 0px 0px 3px 9px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.PortfolioItem-projectName {
+  color: #fff;
+  position: absolute;
+  left: 7%;
+  top: 109%;
+  font-weight: 400;
+}

@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import HomeHero from './components/HomeHero/HomeHero';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
+import Portfolio from './components/Portfolio/Portfolio';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <HomeHero />
       <About />
       <Experience />
+      <Portfolio />
       <div className="SocialNetworks">
         <div className="SocialNetworks-icons">
           <FaLinkedinIn className="SocialNetworks-icon" />
