@@ -1,0 +1,39 @@
+.Experience-item {
+  width: 1000px;
+  margin-bottom: 25px;
+}
+
+.Experience-item-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111111;
+  padding: 5px 30px;
+  border-left: 1px solid #afafaf;
+}
+
+.Experience-item-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.Experience-item-yellowWord {
+  color: #e1ae00;
+  margin-left: 10px;
+}
+
+.Experience-item-arrow {
+  color: #e1ae00;
+  font-size: 35px;
+}
+
+.Experience-item-details {
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.7);
+}
+
+.Experience-item-list {
+  color: #fff;
+  list-style-type: none;
+}
