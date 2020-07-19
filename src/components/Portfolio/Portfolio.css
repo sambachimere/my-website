@@ -5,7 +5,9 @@
 
 .Portfolio-container {
   display: flex;
-  justify-content: space-around;
+  width: calc(100vw - 400px);
+  overflow: auto;
+  padding: 0px 0px 107px 0px;
 }
 
 .Portfolio-block-title {
@@ -13,4 +15,19 @@
   text-shadow: 0px -19px rgba(255, 255, 255, 0.11);
   font-size: 44px;
   font-weight: 500;
+}
+
+.Portfolio-dots {
+  display: flex;
+  justify-content: center;
+  width: calc(100vw - 400px);
+}
+
+.Portfolio-dot {
+  background-color: #e1ae00;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  margin: 0px 7px;
+  cursor: pointer;
 }

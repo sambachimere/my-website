@@ -1,9 +1,9 @@
 .PortfolioItem {
   position: relative;
+  margin-right: 100px;
 }
 
 .PortfolioItem-image {
-  background-image: url('../../../assets/images/serin.png');
   height: 220px;
   width: 390px;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 }
 
 .PortfolioItem-projectName {
-  color: #fff;
+  color: #cccccc;
   position: absolute;
   left: 7%;
   top: 109%;
