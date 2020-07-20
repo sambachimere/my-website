@@ -20,7 +20,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <div className="SocialNetworks-second">
-        <div className="SocialNetworks-icons-bis-second">
+        <div className="SocialNetworks-icons-second">
           <FaLinkedinIn className="SocialNetworks-icon-second" />
           <FaGithub className="SocialNetworks-icon-second" />
         </div>

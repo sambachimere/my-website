@@ -46,9 +46,16 @@
   }
 }
 
+@media (max-width: 905) {
+  .Experience-item {
+    margin-right: 23px;
+  }
+}
+
 @media (max-width: 767px) {
   .Experience-item {
-    min-width: 370px;
+    min-width: 301px;
+    margin-right: 0px;
   }
 
   .Experience-item-title {

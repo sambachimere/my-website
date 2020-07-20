@@ -2,8 +2,9 @@
   position: relative;
 } */
 
-.SocialNetwork-second {
+.SocialNetworks-second {
   align-items: center;
+  display: none;
 }
 
 .SocialNetworks-icons-second {
@@ -15,4 +16,32 @@
 .SocialNetworks-icon-second {
   color: #fff;
   font-size: 23px;
+}
+
+@media (max-width: 905px) {
+  .SocialNetworks-second {
+    padding-top: 63px;
+    padding-left: 65px;
+    padding-bottom: 128px;
+    display: flex !important;
+  }
+
+  .SocialNetworks-icons-second {
+    font-size: 2rem;
+    width: 85px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .SocialNetworks-icon-second {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .SocialNetworks-second {
+    padding-left: 25px;
+    padding-top: 43px;
+    padding-bottom: 108px;
+  }
 }
