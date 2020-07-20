@@ -15,3 +15,16 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+@media (max-width: 905px) {
+  .Experience {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Experience {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

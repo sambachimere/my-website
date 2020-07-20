@@ -10,8 +10,10 @@ const HomeHero = () => {
       <h1 className="HomeHero-iAm">Full Stack Web Developer.</h1>
       <p className="HomeHero-quickPres">
         Former SaaS integrator from Project Management to End-user
-        <br /> Training and Change Management, I know what makes great
-        <br /> products, valuable to both users and businesses.
+        <br className="HomeHero-nextLine" /> Training and Change Management, I
+        know what makes great
+        <br className="HomeHero-nextLine" /> products, valuable to both users
+        and businesses.
       </p>
       <div className="HomeHero-callToActions">
         <div className="HomeHero-contact">

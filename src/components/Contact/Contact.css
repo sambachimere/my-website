@@ -51,3 +51,31 @@ div .Contact-phone {
 .MuiOutlinedInput-root .MuiOutlinedInput-input {
   color: #fff;
 }
+
+@media (max-width: 1010px) {
+  .Contact-form {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 905px) {
+  .Contact {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Contact-form {
+    min-width: 0px;
+    margin-right: 0px;
+  }
+
+  .Contact {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .MuiFormControl-root .MuiInputLabel-outlined {
+    font-size: 17px;
+  }
+}

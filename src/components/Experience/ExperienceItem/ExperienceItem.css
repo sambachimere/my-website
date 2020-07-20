@@ -45,3 +45,21 @@
     min-width: 700px;
   }
 }
+
+@media (max-width: 767px) {
+  .Experience-item {
+    min-width: 370px;
+  }
+
+  .Experience-item-title {
+    font-size: 0.9rem;
+  }
+
+  .Experience-item-block {
+    padding: 5px 12px 5px 20px;
+  }
+
+  .Experience-item-list {
+    padding-left: 20px;
+  }
+}

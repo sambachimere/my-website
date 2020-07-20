@@ -43,3 +43,26 @@
     min-width: 700px;
   }
 }
+
+@media (max-width: 905px) {
+  .Portfolio {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Portfolio {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .Portfolio-container {
+    min-width: 0px;
+    width: auto;
+  }
+
+  .Portfolio-dots {
+    min-width: 0px;
+    width: auto;
+  }
+}

@@ -93,3 +93,43 @@
     left: 23%;
   }
 }
+
+@media (max-width: 905px) {
+  .About {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .About {
+    min-width: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .About-block-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .About-block-competency-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .About-image-block {
+    background-image: url(/static/media/me.f2b4b1f5.jpg);
+    height: 177px;
+    width: auto;
+    background-repeat: no-repeat;
+    border: 1px solid #e1ae00;
+    border-radius: 3px;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-right: 93px;
+  }
+
+  .About-image-yellowForm {
+    left: 40%;
+  }
+}

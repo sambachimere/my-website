@@ -1,32 +1,18 @@
-.App {
+/* .App {
   position: relative;
-}
+} */
 
-.SocialNetworks {
-  position: absolute;
-  left: 89%;
-  bottom: -100px;
-  display: flex;
-  flex-direction: column;
+.SocialNetwork-second {
   align-items: center;
 }
 
-.SocialNetworks-line {
-  height: 140px;
-  display: block;
-  width: 1px;
-  background-color: #e1ae00;
-}
-
-.SocialNetworks-icons {
+.SocialNetworks-icons-second {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 10px;
-  height: 62px;
+  height: 57px;
 }
 
-.SocialNetworks-icon {
+.SocialNetworks-icon-second {
   color: #fff;
-  font-size: 20px;
+  font-size: 23px;
 }

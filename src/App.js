@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+
 import './App.css';
 
 import Sidebar from './components/Sidebar/Sidebar';
@@ -18,12 +19,11 @@ const App = () => {
       <Experience />
       <Portfolio />
       <Contact />
-      <div className="SocialNetworks">
-        <div className="SocialNetworks-icons">
-          <FaLinkedinIn className="SocialNetworks-icon" />
-          <FaGithub className="SocialNetworks-icon" />
+      <div className="SocialNetworks-second">
+        <div className="SocialNetworks-icons-bis-second">
+          <FaLinkedinIn className="SocialNetworks-icon-second" />
+          <FaGithub className="SocialNetworks-icon-second" />
         </div>
-        <span className="SocialNetworks-line"></span>
       </div>
     </div>
   );

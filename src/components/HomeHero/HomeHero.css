@@ -67,3 +67,46 @@
   color: #fff;
   font-size: 25px;
 }
+
+@media (max-width: 1010px) {
+  .HomeHero {
+    padding-right: 70px;
+    min-width: 700px;
+  }
+
+  .HomeHero-nextLine {
+    display: none;
+  }
+
+  .HomeHero-callToActions {
+    width: auto;
+  }
+}
+
+@media (max-width: 905px) {
+  .HomeHero {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .HomeHero {
+    min-width: 0px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .HomeHero-quickPres {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .HomeHero-myWork {
+    display: none;
+  }
+
+  .HomeHero-contact {
+    padding: 17px;
+  }
+}
