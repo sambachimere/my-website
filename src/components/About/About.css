@@ -2,6 +2,7 @@
   padding-left: 200px;
   padding-top: 63px;
   display: flex;
+  min-width: 1000px;
 }
 
 .About-block {
@@ -47,7 +48,6 @@
 
 .About-image {
   padding: 239px 0px 0px 59px;
-  position: relative;
 }
 
 .About-image-block {
@@ -59,13 +59,37 @@
   border-radius: 3px;
 }
 
+.About-image-wrapper {
+  position: relative;
+}
+
 .About-image-yellowForm {
   position: absolute;
   width: 157px;
   height: 90px;
   background-color: #e1ae00;
   border-radius: 3px;
-  top: 62%;
-  left: 66%;
+  top: 67%;
+  left: 57%;
   z-index: -1;
+}
+
+@media (max-width: 1010px) {
+  .About {
+    display: inherit;
+    padding-right: 70px;
+    min-width: 700px;
+  }
+
+  .About-block {
+    width: auto;
+  }
+
+  .About-image {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .About-image-yellowForm {
+    left: 23%;
+  }
 }

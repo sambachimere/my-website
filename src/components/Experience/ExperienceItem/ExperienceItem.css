@@ -1,5 +1,7 @@
 .Experience-item {
-  width: 1000px;
+  max-width: 1200px;
+  min-width: 815px;
+  margin-right: 70px;
   margin-bottom: 25px;
 }
 
@@ -36,4 +38,10 @@
 .Experience-item-list {
   color: #fff;
   list-style-type: none;
+}
+
+@media (max-width: 1010px) {
+  .Experience-item {
+    min-width: 700px;
+  }
 }

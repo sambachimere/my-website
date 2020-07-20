@@ -32,7 +32,7 @@ const Contact = () => {
       <h1 className="Contact-block-title">Contact</h1>
       <form className="Contact-form">
         <InputTextField
-          fullWidth
+          style={{ width: '100%' }}
           label="Votre Nom & Prénom"
           variant="outlined"
           id="custom-css-outlined-input"

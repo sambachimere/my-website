@@ -5,7 +5,8 @@
 
 .Portfolio-container {
   display: flex;
-  width: calc(100vw - 400px);
+  width: calc(100vw - 270px);
+  min-width: 815px;
   overflow: auto;
   padding: 0px 0px 107px 0px;
 }
@@ -20,7 +21,8 @@
 .Portfolio-dots {
   display: flex;
   justify-content: center;
-  width: calc(100vw - 400px);
+  width: calc(100vw - 270px);
+  min-width: 815px;
 }
 
 .Portfolio-dot {
@@ -30,4 +32,14 @@
   border-radius: 50%;
   margin: 0px 7px;
   cursor: pointer;
+}
+
+@media (max-width: 1010px) {
+  .Portfolio-container {
+    min-width: 700px;
+  }
+
+  .Portfolio-dots {
+    min-width: 700px;
+  }
 }

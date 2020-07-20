@@ -12,7 +12,9 @@
 }
 
 .Contact-form {
-  width: 1000px;
+  max-width: 1000px;
+  margin-right: 70px;
+  min-width: 815px;
 }
 
 .Contact-emailAndPhone {
