@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.Sidebar-nav-item:hover {
+  color: #e1ae00;
+}
+
 .Sidebar-nav-item:not(:last-child) {
   margin-bottom: 50px;
 }

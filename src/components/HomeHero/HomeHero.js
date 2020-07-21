@@ -16,15 +16,19 @@ const HomeHero = () => {
         and businesses.
       </p>
       <div className="HomeHero-callToActions">
-        <div className="HomeHero-contact">
-          <h3 className="HomeHero-contact-text">Get in touch</h3>
-        </div>
-        <div className="HomeHero-myWork">
-          <div className="HomeHero-myWork-inner">
-            <h3 className="HomeHero-myWork-text">See how I can help!</h3>
-            <IoMdArrowDropdown className="HomeHero-myWork-icon" />
+        <a href="#contact">
+          <div className="HomeHero-contact">
+            <h3 className="HomeHero-contact-text">Get in touch</h3>
           </div>
-        </div>
+        </a>
+        <a href="#portfolio">
+          <div className="HomeHero-myWork">
+            <div className="HomeHero-myWork-inner">
+              <h3 className="HomeHero-myWork-text">See how I can help!</h3>
+              <IoMdArrowDropdown className="HomeHero-myWork-icon" />
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   );

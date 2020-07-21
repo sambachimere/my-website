@@ -28,7 +28,7 @@ const InputTextField = withStyles({
 
 const Contact = () => {
   return (
-    <div className="Contact">
+    <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
       <form className="Contact-form">
         <InputTextField

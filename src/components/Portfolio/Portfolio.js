@@ -7,7 +7,7 @@ import PortfolioItem from './PortfolioItem/PortfolioItem';
 
 const Portfolio = () => {
   return (
-    <div className="Portfolio">
+    <div className="Portfolio" id="portfolio">
       <h1 className="Portfolio-block-title">Portfolio</h1>
       <div className="Portfolio-container">
         <PortfolioItem

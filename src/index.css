@@ -2,6 +2,7 @@ html {
   background-color: #000;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,4 +10,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

@@ -21,8 +21,15 @@ const App = () => {
       <Contact />
       <div className="SocialNetworks-second">
         <div className="SocialNetworks-icons-second">
-          <FaLinkedinIn className="SocialNetworks-icon-second" />
-          <FaGithub className="SocialNetworks-icon-second" />
+          <a
+            href="https://www.linkedin.com/in/samba-diaw-098039102/"
+            target="_blank"
+          >
+            <FaLinkedinIn className="SocialNetworks-icon-second" />
+          </a>
+          <a href="https://github.com/sambachimere" target="_blank">
+            <FaGithub className="SocialNetworks-icon-second" />
+          </a>
         </div>
       </div>
     </div>
