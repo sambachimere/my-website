@@ -105,8 +105,8 @@
 @media (max-width: 767px) {
   .About {
     min-width: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .About-block-text {

@@ -28,5 +28,8 @@ ${({ theme }) => css`
   .Experience-item-details {
     background-color: ${theme.colors.black};
   }
+  .SocialNetworks-icon-second {
+    color: ${theme.colors.black};
+  }
 `}
 `;
