@@ -2,10 +2,15 @@ import React from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import './HomeHero.css';
 
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+
 const HomeHero = () => {
   return (
     <div className="HomeHero">
-      <h3 className="HomeHero-hello">Hello, I am</h3>
+      <div className="HomeHero-themeSwitcherBlock">
+        <h3 className="HomeHero-hello">Hello, I am</h3>
+        <ThemeSwitcher />
+      </div>
       <h1 className="HomeHero-myName">Samba Diaw,</h1>
       <h1 className="HomeHero-iAm">Full Stack Web Developer.</h1>
       <p className="HomeHero-quickPres">
