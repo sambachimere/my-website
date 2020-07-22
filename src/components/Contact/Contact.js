@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Axios, db } from '../../firebase/firebaseConfig';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField, Button } from '@material-ui/core/';
 
@@ -27,10 +28,39 @@ const InputTextField = withStyles({
 })(TextField);
 
 const Contact = () => {
+  const [formData, setFormData] = useState({});
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendEmail();
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+  };
+  const sendEmail = () => {
+    Axios.post(
+      'https://us-central1-my-website-52582.cloudfunctions.net/submit',
+      formData
+    )
+      .then((res) => {
+        db.collection('emails').add({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          time: new Date(),
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
-      <form className="Contact-form">
+      <form className="Contact-form" onSubmit={handleSubmit}>
         <InputTextField
           style={{ width: '100%' }}
           label="Votre Nom & Prénom"
@@ -68,6 +98,7 @@ const Contact = () => {
           disableElevation
           fullWidth
           className="Contact-button"
+          type="submit"
         >
           Send
         </Button>
