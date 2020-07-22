@@ -27,9 +27,15 @@ const Portfolio = () => {
         />
       </div>
       <div className="Portfolio-dots">
-        <span className="Portfolio-dot"></span>
-        <span className="Portfolio-dot"></span>
-        <span className="Portfolio-dot"></span>
+        <a href="#project1">
+          <span />
+        </a>
+        <a href="#project2">
+          <span />
+        </a>
+        <a href="#project3">
+          <span />
+        </a>
       </div>
     </div>
   );

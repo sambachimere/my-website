@@ -1,6 +1,8 @@
 .Portfolio {
   padding-left: 200px;
   padding-top: 63px;
+  transition: 0.8s;
+  white-space: nowrap;
 }
 
 .Portfolio-container {
@@ -25,13 +27,40 @@
   min-width: 815px;
 }
 
-.Portfolio-dot {
+.Portfolio-dots > a {
   background-color: #e1ae00;
   height: 9px;
   width: 9px;
   border-radius: 50%;
   margin: 0px 7px;
   cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Portfolio-dots > a + a {
+  background-color: rgba(225, 174, 0, 0.5);
+}
+
+.Portfolio-dots > a:hover {
+  background-color: rgba(225, 174, 0, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+s:target ~ .Portfolio-dots > * {
+  background: rgba(225, 174, 0, 0.5);
+}
+/* ACTIVE */
+#s1:target ~ .Portfolio-dots > *:nth-child(1) {
+  background: rgba(225, 174, 0, 1);
+}
+#s2:target ~ .Portfolio-dots > *:nth-child(2) {
+  background: rgba(225, 174, 0, 1);
+}
+#s3:target ~ .Portfolio-dots > *:nth-child(3) {
+  background: rgba(225, 174, 0, 1);
 }
 
 @media (max-width: 1010px) {
