@@ -10,9 +10,6 @@ const InputTextField = withStyles({
     '& label.Mui-focused': {
       color: '#fff',
     },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'green',
-    },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: '#E1AE00',
@@ -27,8 +24,29 @@ const InputTextField = withStyles({
   },
 })(TextField);
 
+const SubmitButton = withStyles({
+  root: {
+    backgroundColor: '#E1AE00',
+    fontSize: '23px',
+    fontWeight: '400',
+    letterSpacing: '1px',
+    marginTop: '40px',
+    '&:hover': {
+      backgroundColor: '#E1AE00',
+    },
+  },
+})(Button);
+
 const Contact = () => {
   const [formData, setFormData] = useState({});
+  console.log(formData);
+
+  const updateInput = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -36,6 +54,7 @@ const Contact = () => {
     setFormData({
       name: '',
       email: '',
+      phone: '',
       message: '',
     });
   };
@@ -48,6 +67,7 @@ const Contact = () => {
         db.collection('emails').add({
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
           message: formData.message,
           time: new Date(),
         });
@@ -63,45 +83,58 @@ const Contact = () => {
       <form className="Contact-form" onSubmit={handleSubmit}>
         <InputTextField
           style={{ width: '100%' }}
-          label="Votre Nom & Prénom"
+          label="Your Name"
           variant="outlined"
           id="custom-css-outlined-input"
-          //size="normal"
+          name="name"
+          onChange={updateInput}
+          value={formData.name || ''}
+          required
         />
         <div className="Contact-emailAndPhone">
           <InputTextField
             className="Contact-email"
             fullWidth
-            label="Votre Email"
+            label="Your Email"
             variant="outlined"
             id="custom-css-outlined-input"
+            name="email"
+            onChange={updateInput}
+            value={formData.email || ''}
+            required
           />
           <InputTextField
             className="Contact-telephone"
             fullWidth
-            label="Votre Téléphone"
+            label="Your Phone"
             variant="outlined"
             id="custom-css-outlined-input"
+            name="phone"
+            onChange={updateInput}
+            value={formData.phone || ''}
+            required
           />
         </div>
         <InputTextField
           fullWidth
-          label="Votre Message"
+          label="Your Message"
           variant="outlined"
           id="custom-css-outlined-input"
           multiline
           rows={10}
+          name="message"
+          onChange={updateInput}
+          value={formData.message || ''}
+          required
         />
-        <Button
+        <SubmitButton
           variant="contained"
-          color="#e1ae00"
-          disableElevation
+          color="primary"
           fullWidth
-          className="Contact-button"
           type="submit"
         >
           Send
-        </Button>
+        </SubmitButton>
       </form>
     </div>
   );

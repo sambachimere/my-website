@@ -25,7 +25,7 @@
 }
 
 div .Contact-button {
-  background-color: #e1ae00;
+  /* background-color: #e1ae00; */
   color: #fff;
   font-size: 23px;
   font-weight: 400;
@@ -43,7 +43,7 @@ div .Contact-phone {
 
 .MuiFormControl-root .MuiInputLabel-outlined {
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
   letter-spacing: 1px;
   font-weight: 200;
 }

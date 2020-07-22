@@ -35,10 +35,15 @@ const Sidebar = () => {
           <a
             href="https://www.linkedin.com/in/samba-diaw-098039102/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn className="SocialNetworks-icon" />
           </a>
-          <a href="https://github.com/sambachimere" target="_blank">
+          <a
+            href="https://github.com/sambachimere"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="SocialNetworks-icon" />
           </a>
         </div>
