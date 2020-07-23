@@ -14,7 +14,13 @@ const ExperienceItem = (props) => {
       <div className="Experience-item-block">
         <h3 className="Experience-item-title">
           {props.jobTitle}{' '}
-          <span className="Experience-item-yellowWord">{props.firm}</span>
+          <a
+            href={props.firm ? props.link : '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="Experience-item-yellowWord">{props.firm}</span>
+          </a>
         </h3>
         {isOpen ? (
           <IoIosArrowDown className="Experience-item-arrow" />
@@ -24,12 +30,8 @@ const ExperienceItem = (props) => {
       </div>
       {isOpen ? (
         <div className="Experience-item-details">
-          <ul className="Experience-item-list">
-            <li>Lorem ipsum dolor sit amet, consectetur adip</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adip</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adip</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adip</li>
-          </ul>
+          <h3 className="Experience-item-timeline">{props.timeLine}</h3>
+          <ul className="Experience-item-wrapper">{props.missions}</ul>
         </div>
       ) : (
         ''

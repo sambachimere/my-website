@@ -27,7 +27,7 @@ const About = () => {
           <div className="About-block-competency-left">
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
-              <p className="About-block-competency-text">Ruby On Rails</p>
+              <p className="About-block-competency-text">HTML & (S)CSS</p>
             </span>
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
@@ -35,29 +35,37 @@ const About = () => {
             </span>
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
-              <p className="About-block-competency-text">React</p>
+              <p className="About-block-competency-text">Ruby On Rails</p>
             </span>
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
               <p className="About-block-competency-text">PostgreSQL</p>
             </span>
-          </div>
-          <div className="About-block-competency-right">
-            <span className="About-block-competency">
-              <IoIosArrowForward className="About-block-competency-arrow" />
-              <p className="About-block-competency-text">HTML & (S)CSS</p>
-            </span>
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
               <p className="About-block-competency-text">Bootstrap</p>
             </span>
+          </div>
+          <div className="About-block-competency-right">
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
-              <p className="About-block-competency-text">Github</p>
+              <p className="About-block-competency-text">React</p>
             </span>
             <span className="About-block-competency">
               <IoIosArrowForward className="About-block-competency-arrow" />
-              <p className="About-block-competency-text">Wordpress</p>
+              <p className="About-block-competency-text">Node.js</p>
+            </span>
+            <span className="About-block-competency">
+              <IoIosArrowForward className="About-block-competency-arrow" />
+              <p className="About-block-competency-text">MongoDB</p>
+            </span>
+            <span className="About-block-competency">
+              <IoIosArrowForward className="About-block-competency-arrow" />
+              <p className="About-block-competency-text">React Native</p>
+            </span>
+            <span className="About-block-competency">
+              <IoIosArrowForward className="About-block-competency-arrow" />
+              <p className="About-block-competency-text">Webflow</p>
             </span>
           </div>
         </div>
