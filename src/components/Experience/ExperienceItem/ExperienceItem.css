@@ -57,7 +57,7 @@
 
 @media (max-width: 767px) {
   .Experience-item {
-    min-width: 301px;
+    min-width: auto;
     margin-right: 0px;
   }
 
@@ -71,5 +71,11 @@
 
   .Experience-item-list {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .Experience-item-yellowWord {
+    margin-left: 0px;
   }
 }

@@ -25,9 +25,6 @@ ${({ theme }) => css`
   .Experience-item-block {
     border-left: ${theme.colors.border};
   }
-  .Experience-item-details {
-    background-color: ${theme.colors.black};
-  }
   .SocialNetworks-icon-second {
     color: ${theme.colors.black};
   }
