@@ -1,4 +1,6 @@
 import React from 'react';
+import { GoLinkExternal } from 'react-icons/go';
+
 import './PortfolioItem.css';
 
 const PortfolioItem = (props) => {
@@ -10,6 +12,11 @@ const PortfolioItem = (props) => {
           backgroundImage: `url(${props.image})`,
         }}
       />
+      <div class="PortfolioItem-liveProject">
+        <div class="Portfolio-liveProject-icon">
+          <GoLinkExternal onClick={props.externalLink} />
+        </div>
+      </div>
       <div className="PortfolioItem-yellowRectangle">
         <h3 className="PortfolioItem-projectType">{props.projectType}</h3>
       </div>

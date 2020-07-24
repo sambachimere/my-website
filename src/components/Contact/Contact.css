@@ -42,14 +42,10 @@ div .Contact-phone {
 }
 
 .MuiFormControl-root .MuiInputLabel-outlined {
-  color: #fff;
+  /* color: #fff; */
   /* font-size: 20px; */
   letter-spacing: 1px;
   font-weight: 200;
-}
-
-.MuiOutlinedInput-root .MuiOutlinedInput-input {
-  color: #fff;
 }
 
 @media (max-width: 1010px) {

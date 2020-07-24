@@ -15,6 +15,7 @@ const Portfolio = () => {
       projectImage: Serin,
       projectType: 'Website',
       projectName: "Serin's website.",
+      website: 'https://serin-website.webflow.io/',
     },
     {
       id: '2',
@@ -47,12 +48,19 @@ const Portfolio = () => {
       <h1 className="Portfolio-block-title">Portfolio</h1>
       <div className="Portfolio-container">
         {projects.map((project) => (
-          <PortfolioItem
-            key={project.id}
-            image={project.projectImage}
-            projectType={project.projectType}
-            projectName={project.projectName}
-          />
+          <a
+            href={project.website ? project.website : '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <PortfolioItem
+              key={project.id}
+              image={project.projectImage}
+              projectType={project.projectType}
+              projectName={project.projectName}
+              externalLink={project.website}
+            />
+          </a>
         ))}
       </div>
       <div className="Portfolio-dots">

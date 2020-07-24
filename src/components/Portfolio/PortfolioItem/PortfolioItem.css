@@ -3,18 +3,40 @@
   margin-right: 100px;
 }
 
+.PortfolioItem:hover .PortfolioItem-liveProject {
+  opacity: 1;
+}
+
 .PortfolioItem-image {
   height: 220px;
   width: 390px;
   background-repeat: no-repeat;
-  border-radius: 3px;
   background-position: 50% 50%;
   background-size: cover;
 }
 
+.PortfolioItem-liveProject {
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.Portfolio-liveProject-icon {
+  color: black;
+  font-size: 27px;
+}
+
 .PortfolioItem-yellowRectangle {
   background-color: #e1ae00;
-  border-radius: 3px;
   height: 220px;
   width: 390px;
   display: flex;

@@ -13,8 +13,10 @@ ${({ theme }) => css`
   .Experience-title,
   .Portfolio-block-title,
   .Contact-block-title,
-  div > .MuiOutlinedInput-root .MuiOutlinedInput-input {
-    color: ${theme.colors.black};
+  .MuiFormControl-root .MuiInputLabel-outlined,
+  .MuiOutlinedInput-root .MuiOutlinedInput-input,
+  label.Mui-focused {
+    color: ${theme.colors.black} !important;
   }
   .About-block-title,
   .Experience-title,
