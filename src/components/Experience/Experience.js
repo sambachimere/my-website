@@ -7,6 +7,7 @@ import ExperienceItem from './ExperienceItem/ExperienceItem';
 const Experience = () => {
   const activities = [
     {
+      id: '1',
       jobTitle: 'Full Stack Web Developer',
       firm: 'Freelance',
       timeLine: 'September 2019 - present',
@@ -26,6 +27,7 @@ const Experience = () => {
       ],
     },
     {
+      id: '2',
       jobTitle: 'Business Developer',
       firm: 'Freelance',
       timeLine: 'November 2018 - present',
@@ -55,6 +57,7 @@ const Experience = () => {
       ],
     },
     {
+      id: '3',
       jobTitle: 'Teaching assistant',
       firm: '@Humind School',
       website: 'https://www.humindschool.com/',
@@ -85,6 +88,7 @@ const Experience = () => {
       <div className="Experience-block">
         {activities.map((activity) => (
           <ExperienceItem
+            key={activity.id}
             jobTitle={activity.jobTitle}
             firm={activity.firm}
             timeLine={activity.timeLine}

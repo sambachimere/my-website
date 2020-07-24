@@ -29,13 +29,13 @@ const Portfolio = () => {
       projectName: 'Natours web app.',
     },
     {
-      id: '3',
+      id: '4',
       projectImage: Natours,
       projectType: 'Web app',
       projectName: 'Natours web app.',
     },
     {
-      id: '3',
+      id: '5',
       projectImage: CrwnShop,
       projectType: 'Web app',
       projectName: 'CrwnShop web app.',

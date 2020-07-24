@@ -60,6 +60,10 @@
   font-size: 23px;
 }
 
+.active {
+  color: #e1ae00;
+}
+
 @media (max-width: 905px) {
   .Sidebar {
     width: 100vw;

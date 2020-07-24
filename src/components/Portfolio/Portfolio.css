@@ -39,7 +39,6 @@
   transition: background-color 0.3s;
 }
 
-.active,
 .Portfolio-dot:hover {
   background-color: #e1ae00;
 }
