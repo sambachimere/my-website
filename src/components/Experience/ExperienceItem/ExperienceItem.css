@@ -60,6 +60,9 @@
 
 .Experience-item-wrapper-arrow {
   color: #e1ae00;
+  font-size: 20px;
+  min-width: 25px;
+  max-width: 25px;
 }
 
 .Experience-item-wrapper li {

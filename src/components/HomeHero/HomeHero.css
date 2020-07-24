@@ -49,11 +49,19 @@
   border-radius: 3px;
 }
 
+.HomeHero-contact:hover {
+  background: rgba(225, 174, 0, 0.4);
+}
+
 .HomeHero-contact-text {
   margin: 0px;
   color: #e1ae00;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.HomeHero-contact-text:hover {
+  color: #fff;
 }
 
 .HomeHero-myWork-inner {

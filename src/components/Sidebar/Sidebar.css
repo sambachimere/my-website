@@ -38,11 +38,19 @@
   border-radius: 3px;
 }
 
+.Sidebar-resume:hover {
+  background: rgba(225, 174, 0, 0.4);
+}
+
 .Sidebar-resume-text {
   margin: 0px;
   color: #e1ae00;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.Sidebar-resume-text:hover {
+  color: #fff;
 }
 
 .SocialNetworks {
