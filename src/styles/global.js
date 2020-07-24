@@ -15,7 +15,8 @@ ${({ theme }) => css`
   .Contact-block-title,
   .MuiFormControl-root .MuiInputLabel-outlined,
   .MuiOutlinedInput-root .MuiOutlinedInput-input,
-  label.Mui-focused {
+  label.Mui-focused,
+  .PortfolioItem-projectName {
     color: ${theme.colors.black} !important;
   }
   .About-block-title,
