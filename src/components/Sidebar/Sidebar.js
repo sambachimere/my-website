@@ -129,9 +129,15 @@ const Sidebar = () => {
             Contact<span className="Sidebar-period">.</span>
           </h3>
         </a>
-        <div className="Sidebar-resume">
-          <h3 className="Sidebar-resume-text">Resume</h3>
-        </div>
+        <a
+          href="https://drive.google.com/file/d/1mYNFBc-QHRLX0fk11U56TK_nUTXFaqbb/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="Sidebar-resume">
+            <h3 className="Sidebar-resume-text">Resume</h3>
+          </div>
+        </a>
       </div>
       <div className="SocialNetworks">
         <div className="SocialNetworks-icons">

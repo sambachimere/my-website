@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import './Portfolio.css';
 import Serin from '../../assets/images/serin.png';
@@ -43,10 +43,36 @@ const Portfolio = () => {
     },
   ];
 
+  let stream = useRef();
+  let myProjects = useRef();
+  let prev = useRef();
+  let next = useRef();
+
+  const handlePrevClick = () => {
+    stream.insertBefore(myProjects[myProjects.length - 1], myProjects[0]);
+  };
+
+  const handleNextClick = () => {
+    stream.appendChild(myProjects[0]);
+  };
+
   return (
     <div className="Portfolio" id="portfolio">
       <h1 className="Portfolio-block-title">Portfolio</h1>
       <div className="Portfolio-container">
+        <div ref={prev} class="Portfolio-prev" onClick={handlePrevClick}></div>
+        <div ref={next} class="Portfolio-next" onClick={handleNextClick}></div>
+        <div ref={stream} className="Portfolio-stream">
+          <div ref={myProjects} className="Portfolio-project bg-1"></div>
+          <div ref={myProjects} className="Portfolio-project bg-2"></div>
+          <div ref={myProjects} className="Portfolio-project bg-3"></div>
+          <div ref={myProjects} className="Portfolio-project bg-4"></div>
+          <div ref={myProjects} className="Portfolio-project bg-5"></div>
+        </div>
+      </div>
+      {/* <div className="Portfolio-container">
+        <div class="Portfolio-prev"></div>
+        <div class="Portfolio-next"></div>
         {projects.map((project) => (
           <a
             href={project.website ? project.website : '#'}
@@ -73,7 +99,7 @@ const Portfolio = () => {
         <a href="#project3" className="Portfolio-dot">
           <span />
         </a>
-      </div>
+        </div> */}
     </div>
   );
 };

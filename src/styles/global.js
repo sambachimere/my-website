@@ -16,7 +16,9 @@ ${({ theme }) => css`
   .MuiFormControl-root .MuiInputLabel-outlined,
   .MuiOutlinedInput-root .MuiOutlinedInput-input,
   label.Mui-focused,
-  .PortfolioItem-projectName {
+  .PortfolioItem-projectName,
+  .HomeHero-myWork-text,
+  .About-block-text-message {
     color: ${theme.colors.black} !important;
   }
   .About-block-title,
@@ -31,5 +33,10 @@ ${({ theme }) => css`
   .SocialNetworks-icon-second {
     color: ${theme.colors.black};
   }
+  .Portfolio-container:before {
+    background: ${theme.colors.linearGradientBefore}
+  }
+  .Portfolio-container:after {
+    background: ${theme.colors.linearGradientAfter}
 `}
 `;

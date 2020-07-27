@@ -9,11 +9,14 @@ const About = () => {
       <div className="About-block">
         <h1 className="About-block-title">About</h1>
         <p className="About-block-text">
-          After a Master in Management from Neoma Business School, knowing so
-          little about anything, I got foot in the door of IT as a Consultant
-          because it was so unknown that it felt enthralling.
+          I'm a business developer who loves coding. I started building apps in
+          august 2019, and since, I've never stopped.{' '}
+          <a href="#contact">
+            <span className="About-block-text-message">Drop me a message</span>
+          </a>{' '}
+          if you want us to collaborate.
         </p>
-        <p className="About-block-text">
+        {/*<p className="About-block-text">
           I became passionate about SaaS products after a global CRM
           (Salesforce) deployment program in Health Industry.
         </p>
@@ -21,7 +24,7 @@ const About = () => {
           So I joined MonDocteur.fr, and later Doctolib to work on amazing
           products helping and empowering people as an Onboarding Manager, Saas
           Integrator and Trainer.
-        </p>
+        </p>*/}
         <p className="About-block-text">Here is what I learned so far:</p>
         <div className="About-block-competencies">
           <div className="About-block-competency-left">

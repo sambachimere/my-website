@@ -1,6 +1,7 @@
 .PortfolioItem {
   position: relative;
-  margin-right: 100px;
+  /* margin-right: 100px; */
+  width: 390px;
   border: 1px solid #e1ae00;
 }
 

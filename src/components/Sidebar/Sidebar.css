@@ -49,7 +49,7 @@
   letter-spacing: 1px;
 }
 
-.Sidebar-resume-text:hover {
+.Sidebar-resume:hover .Sidebar-resume-text {
   color: #fff;
 }
 

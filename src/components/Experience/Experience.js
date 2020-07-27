@@ -22,7 +22,7 @@ const Experience = () => {
         </span>,
         <span className="Experience-item-wrapper-inner">
           <IoIosArrowForward className="Experience-item-wrapper-arrow" />
-          <li>Mobile apps : X, Y, Z</li>
+          <li>Mobile apps : To be continued ...</li>
         </span>,
       ],
     },

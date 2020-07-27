@@ -24,6 +24,12 @@
   font-weight: lighter;
 }
 
+.About-block-text-message {
+  color: #fff;
+  border-bottom: 3px solid #e1ae00;
+  cursor: pointer;
+}
+
 .About-block-competencies {
   display: flex;
   justify-content: space-between;
