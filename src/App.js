@@ -2,7 +2,6 @@ import React from 'react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import './App.css';
-
 import Sidebar from './components/Sidebar/Sidebar';
 import HomeHero from './components/HomeHero/HomeHero';
 import About from './components/About/About';
