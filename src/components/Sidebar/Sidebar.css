@@ -1,10 +1,13 @@
-.Sidebar-nav {
+.Sidebar {
   background-color: #111111;
   width: 154px;
   height: 100vh;
   position: fixed;
   box-sizing: border-box;
-  padding: 63px 20px 0px 20px;
+  padding: 77px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Sidebar-nav-item {
@@ -14,6 +17,10 @@
   cursor: pointer;
 }
 
+.Sidebar-nav-item:hover {
+  color: #e1ae00;
+}
+
 .Sidebar-nav-item:not(:last-child) {
   margin-bottom: 50px;
 }
@@ -21,19 +28,94 @@
 .Sidebar-period {
   font-size: 25px;
   margin-left: 4px;
-  color: #E1AE00;
+  color: #e1ae00;
 }
 
 .Sidebar-resume {
   padding: 10px;
-  border: 1px solid #E1AE00;
+  border: 2px solid #e1ae00;
   text-align: center;
   border-radius: 3px;
 }
 
+.Sidebar-resume:hover {
+  background: rgba(225, 174, 0, 0.4);
+}
+
 .Sidebar-resume-text {
   margin: 0px;
-  color: #E1AE00;
-  font-weight: lighter;
+  color: #e1ae00;
+  font-weight: 400;
   letter-spacing: 1px;
+}
+
+.Sidebar-resume:hover .Sidebar-resume-text {
+  color: #fff;
+}
+
+.SocialNetworks {
+  align-items: center;
+}
+
+.SocialNetworks-icons {
+  display: flex;
+  justify-content: space-around;
+  height: 57px;
+}
+
+.SocialNetworks-icon {
+  color: #fff;
+  font-size: 23px;
+}
+
+.active {
+  color: #e1ae00;
+}
+
+@media (max-width: 905px) {
+  .Sidebar {
+    width: 100vw;
+    height: 65px;
+    position: fixed;
+    padding: 0px;
+    display: flex;
+    bottom: 0px;
+    z-index: 100;
+    /* align-items: center; */
+    /* text-align: center; */
+    justify-content: center;
+  }
+
+  .Sidebar-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Sidebar-nav-item:not(:last-child) {
+    margin: 0px;
+  }
+
+  .Sidebar-resume {
+    display: none;
+  }
+
+  .SocialNetworks {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .Sidebar {
+    padding: 0px 5px;
+  }
+
+  .Sidebar-nav-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .Sidebar-nav-item {
+    font-size: 0.85rem;
+  }
 }

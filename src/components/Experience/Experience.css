@@ -1,0 +1,30 @@
+.Experience {
+  padding-left: 200px;
+  padding-top: 63px;
+}
+
+.Experience-title {
+  color: #fff;
+  text-shadow: 0px -19px rgba(255, 255, 255, 0.11);
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.Experience-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 905px) {
+  .Experience {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

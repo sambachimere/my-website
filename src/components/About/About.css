@@ -1,0 +1,140 @@
+.About {
+  padding-left: 200px;
+  padding-top: 63px;
+  display: flex;
+  min-width: 1000px;
+}
+
+.About-block {
+  width: 51%;
+}
+
+.About-block-title {
+  color: #fff;
+  text-shadow: 0px -19px rgba(255, 255, 255, 0.11);
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.About-block-text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.About-block-text-message {
+  color: #fff;
+  border-bottom: 3px solid #e1ae00;
+  cursor: pointer;
+}
+
+.About-block-competencies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.About-block-competency {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.About-block-competency-text {
+  color: #fff;
+  margin: 0px 0px 0px 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.About-block-competency-arrow {
+  color: #e1ae00;
+  font-size: 23px;
+}
+
+.About-image {
+  padding: 239px 0px 0px 59px;
+}
+
+.About-image-block {
+  background-image: url('../../assets/images/me.jpg');
+  height: 220px;
+  width: 325px;
+  background-repeat: no-repeat;
+  border: 1px solid #e1ae00;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.About-image-wrapper {
+  position: relative;
+}
+
+.About-image-yellowForm {
+  position: absolute;
+  width: 157px;
+  height: 90px;
+  background-color: #e1ae00;
+  top: 67%;
+  left: 57%;
+  z-index: -1;
+}
+
+@media (max-width: 1010px) {
+  .About {
+    display: inherit;
+    padding-right: 70px;
+    min-width: 700px;
+  }
+
+  .About-block {
+    width: auto;
+  }
+
+  .About-image {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .About-image-yellowForm {
+    left: 185px;
+  }
+}
+
+@media (max-width: 905px) {
+  .About {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .About {
+    min-width: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .About-block-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .About-block-competency-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .About-image-block {
+    background-image: url(/static/media/me.f2b4b1f5.jpg);
+    height: 177px;
+    width: 255px;
+    background-repeat: no-repeat;
+    border: 1px solid #e1ae00;
+    border-radius: 3px;
+  }
+
+  .About-image-yellowForm {
+    left: 117px;
+    top: 107px;
+  }
+}

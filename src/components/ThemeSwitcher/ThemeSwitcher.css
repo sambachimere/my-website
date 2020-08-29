@@ -1,0 +1,15 @@
+.ThemeSwitcher {
+  width: 22%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ThemeSwitcher-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1010px) {
+  .ThemeSwitcher {
+    width: 42%;
+  }
+}
