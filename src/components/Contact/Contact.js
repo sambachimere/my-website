@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Axios, db } from '../../firebase/firebaseConfig';
+// import { Axios, db } from '../../firebase/firebaseConfig';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField, Button } from '@material-ui/core/';
 
@@ -50,7 +50,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    sendEmail();
+    // sendEmail();
     setFormData({
       name: '',
       email: '',
@@ -58,28 +58,29 @@ const Contact = () => {
       message: '',
     });
   };
-  const sendEmail = () => {
-    Axios.post(
-      'https://us-central1-my-website-52582.cloudfunctions.net/submit',
-      formData
-    )
-      .then((res) => {
-        db.collection('emails').add({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          time: new Date(),
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  // const sendEmail = () => {
+  //   Axios.post(
+  //     'https://us-central1-my-website-52582.cloudfunctions.net/submit',
+  //     formData
+  //   )
+  //     .then((res) => {
+  //       db.collection('emails').add({
+  //         name: formData.name,
+  //         email: formData.email,
+  //         phone: formData.phone,
+  //         message: formData.message,
+  //         time: new Date(),
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
   return (
     <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
+      {/* <form className="Contact-form" onSubmit={handleSubmit}> */} 
       <form className="Contact-form" onSubmit={handleSubmit}>
         <InputTextField
           style={{ width: '100%' }}
