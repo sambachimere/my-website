@@ -5,6 +5,8 @@ ${({ theme }) => css`
   html {
     background: ${theme.colors.background};
   }
+  .Header,
+  .Sidebar,
   .HomeHero-hello,
   .HomeHero-iAm,
   .About-block-title,
@@ -19,6 +21,7 @@ ${({ theme }) => css`
   .PortfolioItem-projectName,
   .HomeHero-myWork-text,
   .About-block-text-message {
+    background: ${theme.colors.background};
     color: ${theme.colors.black} !important;
   }
   .About-block-title,
