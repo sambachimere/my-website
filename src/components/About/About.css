@@ -1,6 +1,6 @@
 .About {
-  padding-left: 200px;
-  padding-top: 63px;
+  padding-left: 300px;
+  padding-top: 125px;
   display: flex;
   min-width: 1000px;
 }
@@ -18,7 +18,7 @@
 
 .About-block-text {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 35px;
   text-align: justify;
   font-weight: lighter;
@@ -44,7 +44,7 @@
 .About-block-competency-text {
   color: #fff;
   margin: 0px 0px 0px 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
 }
 
@@ -137,4 +137,120 @@
     left: 117px;
     top: 107px;
   }
+}
+
+.About-callToActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 190px;
+  margin-top: 32px;
+}
+
+.About-contact {
+  padding: 12px 20px;
+  border: 2px solid #e1ae00;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.About-contact:hover {
+  background: rgba(225, 174, 0, 0.4);
+}
+
+.About-contact-text {
+  margin: 0px;
+  color: #e1ae00;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.About-contact:hover .About-contact-text {
+  color: #fff;
+}
+
+.About-myWork {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.About-myWork-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.About-myWork-text {
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.About-myWork-icon {
+  color: #fff;
+  font-size: 25px;
 }
