@@ -181,10 +181,25 @@
 
 @media (max-width: 520px) {
   .Sidebar-nav-item {
-    font-size: 0.85rem;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
   }
-
+  
   .Nav-item-resume {
     display: none;
+  }
+
+  .Line-and-Dot {
+    margin-left: 6px;
+    margin-right: 8px;
+  }
+
+  .NavItem-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .NavItem-inner-block {
+    align-items: center !important;
   }
 }

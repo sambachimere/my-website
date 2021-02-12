@@ -76,3 +76,9 @@ div .Contact-phone {
     font-size: 17px;
   }
 }
+
+@media (max-width: 520px) {
+  .Contact {
+    padding-top: 75px;
+  }
+}

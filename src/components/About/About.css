@@ -267,6 +267,10 @@
 
 @media (max-width: 520px) {
 
+  .About {
+    padding-top: 75px;
+  }
+
   .About-callToActions {
     padding-left: 20px !important;
   }

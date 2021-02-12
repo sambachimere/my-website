@@ -22,7 +22,7 @@
 }
 
 .Portfolio-project-image {
-    width: 525px;
+    width: 330px !important;
     border-width: 1px;
     border-style: solid;
     border-color: #fff;
@@ -114,6 +114,10 @@
 }
 
 @media (max-width: 520px) {
+    .Portfolio {
+        padding-top: 75px;
+    }
+
     .Portfolio-project-image {
         width: 380px;
     }

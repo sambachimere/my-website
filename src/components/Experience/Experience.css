@@ -28,3 +28,18 @@
     padding-right: 20px;
   }
 }
+
+@media (max-width: 520px) {
+
+  .Experience {
+    padding-top: 75px;
+  }
+
+  .Experience-item-title {
+    font-size: 15px;
+  }
+
+  .Experience-item-yellowWord {
+    margin-left: 0px !important;
+  }
+}
