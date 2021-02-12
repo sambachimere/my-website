@@ -32,8 +32,7 @@ const Project1 = ({
         />
       </div>
       <div 
-        className="Portfolio-project-description-block"
-        style={{ marginLeft: '30px' }}
+        className="Portfolio-project-description-block-1"
       >
         <div className="Portfolio-project-title-block">
           { children }
@@ -64,9 +63,9 @@ const Project2 = ({
   buttonTitle 
 }) => {
   return (
-    <div className="Portfolio-project-block">
+    <div className="Portfolio-project-block Portfolio-project-block-2">
       <div 
-        className="Portfolio-project-description-block"
+        className="Portfolio-project-description-block-2"
         style={{ marginRight: '30px' }}
       >
         <div className="Portfolio-project-title-block">
@@ -118,6 +117,18 @@ const Portfolio = () => {
       >
         <img src={ NatoursLogo } style={{ width: '72px' }} className="Logo" />
       </Project2>
+
+      <div className="Project-Natours">
+        <Project1
+          imageUrl={Natours}
+          name="Natours" 
+          description="Lorem Ipsum"
+          marginBottom={true}
+          buttonTitle="VOIR LE SITE"
+        >
+          <CRWNLogo className="Logo"/>
+        </Project1>
+      </div>
 
       <Project1 
         imageUrl={Forkify}

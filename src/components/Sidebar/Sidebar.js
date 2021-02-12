@@ -32,6 +32,7 @@ const NavItem = ({
           rel = { rel }
           onClick={() => {}}
           style={{ color: '#fff', marginBottom: -3 }}
+          className="Nav-item"
         >
           <h3 className='Sidebar-nav-item'>
             { text }
@@ -46,18 +47,22 @@ const Sidebar = () => {
   return (
     <div className="Sidebar">
       <div className="Sidebar-nav">
-        <NavItem href="#about" text="About" />
+        <div className="Nav-item-about">
+          <NavItem href="#about" text="About" />
+        </div>
         <NavItem href="#experience" text="Experience" />
         <NavItem href="#portfolio" text="Portfolio" />
         <NavItem href="#contact" text="Contact" />
-        <NavItem 
-          href="https://drive.google.com/file/d/1mYNFBc-QHRLX0fk11U56TK_nUTXFaqbb/view?usp=sharing"
-          target="_blank" 
-          rel="noopener noreferrer"
-          text="Resume" 
-          display={true}
-          alignItemCenter={true}
-        />
+        <div className="Nav-item-resume">
+          <NavItem 
+            href="https://drive.google.com/file/d/1mYNFBc-QHRLX0fk11U56TK_nUTXFaqbb/view?usp=sharing"
+            target="_blank" 
+            rel="noopener noreferrer"
+            text="Resume" 
+            display={true}
+            alignItemCenter={true}
+          />
+        </div>
       </div>
       {/* 
         <div className="SocialNetworks">

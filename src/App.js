@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 import './App.css';
 import Header from './components/Header/Header';
@@ -33,6 +34,13 @@ const App = () => {
             rel="noopener noreferrer"
           >
             <FaGithub className="SocialNetworks-icon-second" />
+          </a>
+          <a
+            href="mailto:sambachimerediaw@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MdEmail className="SocialNetworks-icon-second" size={32}/>
           </a>
         </div>
       </div>

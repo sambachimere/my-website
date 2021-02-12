@@ -29,3 +29,12 @@
     margin-left: 50px;
 }
 
+@media (max-width: 905px) {
+    .Title {
+        font-size: 20px;
+    }
+
+    .Social-Media {
+        display: none;
+    }
+}
