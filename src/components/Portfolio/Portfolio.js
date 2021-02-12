@@ -2,10 +2,10 @@ import React from 'react';
 
 import './Portfolio.css';
 
-import Carousel from '../Carousel/Carousel';
-import Serin from '../../assets/images/serin.png';
-import SelectAcademie from '../../assets/images/select-academie.png';
-import Toysly from '../../assets/images/toysly.png';
+// import Carousel from '../Carousel/Carousel';
+// import Serin from '../../assets/images/serin.png';
+// import SelectAcademie from '../../assets/images/select-academie.png';
+// import Toysly from '../../assets/images/toysly.png';
 import CrwnShop from '../../assets/images/crwn-shop.png';
 import Natours from '../../assets/images/natours.png';
 import Forkify from '../../assets/images/forkify.png';
@@ -17,7 +17,6 @@ import ForkifyLogo from './../../assets/images/forkify-logo.png';
 const Project1 = ({ 
   imageUrl, 
   children, 
-  logUrl,
   name, 
   description, 
   marginBottom,
@@ -29,6 +28,7 @@ const Project1 = ({
         <img 
           className="Portfolio-project-image" 
           src={imageUrl} 
+          alt=""
         />
       </div>
       <div 
@@ -55,7 +55,6 @@ const Project1 = ({
 
 const Project2 = ({ 
   children, 
-  logUrl,
   imageUrl, 
   name, 
   description, 
@@ -88,6 +87,7 @@ const Project2 = ({
         <img 
           className="Portfolio-project-image" 
           src={imageUrl} 
+          alt=""
         />
       </div>
     </div>
@@ -115,7 +115,12 @@ const Portfolio = () => {
         marginBottom={true}
         buttonTitle="VOIR LE SITE"
       >
-        <img src={ NatoursLogo } style={{ width: '72px' }} className="Logo" />
+        <img 
+          src={ NatoursLogo } 
+          style={{ width: '72px' }} 
+          className="Logo"
+          alt="" 
+        />
       </Project2>
 
       <div className="Project-Natours">
@@ -136,7 +141,12 @@ const Portfolio = () => {
         description="Lorem Ipsum"
         buttonTitle="VOIR LE SITE"
       >
-        <img src={ ForkifyLogo } style={{ width: '50px' }} className="Logo" />
+        <img 
+          src={ ForkifyLogo } 
+          style={{ width: '50px' }} 
+          className="Logo"
+          alt=""
+        />
       </Project1>
     </div>
   )
