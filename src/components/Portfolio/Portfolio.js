@@ -153,19 +153,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
-
-// Previous design
-
-{/* 
-const Portfolio = () => {
-  const imgs = [Serin, SelectAcademie, Toysly, Natours, CrwnShop];
-
-  return (
-    <div className="Portfolio" id="portfolio">
-      <h1 className="Portfolio-block-title">Portfolio</h1>
-      <Carousel imgUrls={imgs} />
-      <div className="Portfolio-container"></div>
-    </div>
-  );
-};
-*/}
