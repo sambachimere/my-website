@@ -181,7 +181,7 @@
 
 @media (max-width: 520px) {
   .Sidebar-nav-item {
-    font-size: 11px !important;
+    font-size: 13px !important;
     letter-spacing: 2px !important;
   }
   
@@ -197,6 +197,7 @@
   .NavItem-dot {
     width: 5px;
     height: 5px;
+    display: none;
   }
 
   .NavItem-inner-block {
