@@ -38,84 +38,34 @@ const SubmitButton = withStyles({
 })(Button);
 
 const Contact = () => {
-  const [formData, setFormData] = useState({});
-  console.log(formData);
+  const [success, setSuccess] = useState(false);
 
-  const updateInput = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-    
-  //   setFormData({
-  //     name: '',
-  //     email: '',
-  //     phone: '',
-  //     message: '',
-  //   });
-  // };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    let frmData = new FormData(formData);
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(frmData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-      alert(error))
-
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
-  }
-
-  // const sendEmail = () => {
-  //   Axios.post(
-  //     'https://us-central1-my-website-52582.cloudfunctions.net/submit',
-  //     formData
-  //   )
-  //     .then((res) => {
-  //       db.collection('emails').add({
-  //         name: formData.name,
-  //         email: formData.email,
-  //         phone: formData.phone,
-  //         message: formData.message,
-  //         time: new Date(),
-  //       });
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
+  React.useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setSuccess(true);
+    }
+  }, []);
 
   return (
     <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
-      {/* <form className="Contact-form" onSubmit={handleSubmit}> */} 
+      {success && (
+        <p style={{ color: "green" }}>Thanks for your message! </p>
+      )}
       <form
         className="Contact-form" 
         name="contact" 
-        onSubmit={handleSubmit} 
         method="POST"
+        action="/contact/?success=true"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <InputTextField
           style={{ width: '100%' }}
           label="Your Name"
           variant="outlined"
           id="custom-css-outlined-input"
           name="name"
-          onChange={updateInput}
-          value={formData.name || ''}
           required
         />
         <div className="Contact-emailAndPhone">
@@ -126,8 +76,6 @@ const Contact = () => {
             variant="outlined"
             id="custom-css-outlined-input"
             name="email"
-            onChange={updateInput}
-            value={formData.email || ''}
             required
           />
           <InputTextField
@@ -137,8 +85,6 @@ const Contact = () => {
             variant="outlined"
             id="custom-css-outlined-input"
             name="phone"
-            onChange={updateInput}
-            value={formData.phone || ''}
             required
           />
         </div>
@@ -150,8 +96,6 @@ const Contact = () => {
           multiline
           rows={10}
           name="message"
-          onChange={updateInput}
-          value={formData.message || ''}
           required
         />
         <SubmitButton
