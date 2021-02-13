@@ -45,7 +45,7 @@ const Contact = () => {
       setSuccess(true);
     }
   }, []);
-
+  
   return (
     <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
