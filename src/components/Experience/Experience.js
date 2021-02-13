@@ -81,7 +81,7 @@ const Experience = () => {
       ],
     },
   ];
-
+  
   return (
     <div className="Experience" id="experience">
       <h1 className="Experience-title">Experience</h1>

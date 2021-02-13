@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="Logo"></div>
                     <div className="Title-block">
                         <h3 className="Title">
-                            Samba Diaw, Full Stack Developer
+                            Samba Diaw, <br className="Title-Return" /> Full Stack Developer
                         </h3>
                     </div>
                 </div>      

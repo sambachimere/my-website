@@ -22,10 +22,10 @@
 }
 
 .Portfolio-project-image {
-    width: 330px !important;
+    width: 523px !important;
     border-width: 1px;
     border-style: solid;
-    border-color: #fff;
+    border-color: #000;
 }
 
 .Portfolio-project-description-block-1 {
@@ -119,6 +119,6 @@
     }
 
     .Portfolio-project-image {
-        width: 380px;
+        width: 380px !important;
     }
 }

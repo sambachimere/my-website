@@ -5,6 +5,13 @@ ${({ theme }) => css`
   html {
     background: ${theme.colors.background};
   }
+  .Title,
+  .Portfolio-project-title,
+  .Portfolio-project-description,
+  .Portfolio-project-image,
+  .Sidebar-nav-item,
+  .Nav-Dot,
+  .Vertical-line,
   .Header,
   .Sidebar,
   .HomeHero-hello,
@@ -20,9 +27,15 @@ ${({ theme }) => css`
   label.Mui-focused,
   .PortfolioItem-projectName,
   .HomeHero-myWork-text,
-  .About-block-text-message {
+  .About-block-text-message 
+  {
     background: ${theme.colors.background};
     color: ${theme.colors.black} !important;
+  }
+  .Vertical-line,
+  {
+    background: ${theme.colors.backgroundLine},
+    color: ${theme.colors.textColor},
   }
   .About-block-title,
   .Experience-title,
@@ -33,11 +46,17 @@ ${({ theme }) => css`
   .Experience-item-block {
     border-left: ${theme.colors.border};
   }
-  .SocialNetworks-icon-second {
+  .SocialNetworks-icon-second
+  {
     color: ${theme.colors.black};
   }
-  .Portfolio-container:before {
+  .Portfolio-container:before,
+  {
     background: ${theme.colors.linearGradientBefore}
+  }
+  .Portfolio-project-button-text,
+  .About-contact-text {
+    color: ${theme.colors.textColor}
   }
   .Portfolio-container:after {
     background: ${theme.colors.linearGradientAfter}

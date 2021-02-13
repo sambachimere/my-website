@@ -29,6 +29,14 @@
   margin-right: 20px;
 }
 
+.Sidebar-nav-item {
+  margin-bottom: 0px !important;
+}
+
+.Nav-Dot {
+  display: none;
+}
+
 .Vertical-line {
   height: 50px;
   width: 1px;
@@ -202,5 +210,9 @@
 
   .NavItem-inner-block {
     align-items: center !important;
+  }
+
+  .Nav-Dot {
+    display: inline;
   }
 }

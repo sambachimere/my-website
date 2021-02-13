@@ -111,7 +111,7 @@ const Portfolio = () => {
       <Project2 
         imageUrl={Natours}
         name="Natours" 
-        description="Lorem Ipsum"
+        description="A web application to book tours in nature."
         marginBottom={true}
         buttonTitle="VOIR LE SITE"
       >
@@ -127,18 +127,26 @@ const Portfolio = () => {
         <Project1
           imageUrl={Natours}
           name="Natours" 
-          description="Lorem Ipsum"
+          description="A web application to book tours in nature."
           marginBottom={true}
           buttonTitle="VOIR LE SITE"
         >
-          <CRWNLogo className="Logo"/>
+          <img 
+            src={ NatoursLogo } 
+            style={{ 
+              width: '50px',
+              marginTop: '12px  '
+            }}
+            className="Logo"
+            alt=""
+          />
         </Project1>
       </div>
-
+      
       <Project1 
         imageUrl={Forkify}
-        name="Forkify" 
-        description="Lorem Ipsum"
+        name="Forkify"
+        description="A web application to search for recipe."
         buttonTitle="VOIR LE SITE"
       >
         <img 

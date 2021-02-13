@@ -20,6 +20,10 @@
     text-transform: uppercase;
 }
 
+.Title-Return {
+    display: none;
+}
+
 .Social-medias {
     display: flex;
     align-items: center;
@@ -43,10 +47,14 @@
 
     .Header-inner {
         margin-left: 15px;
-        width: 85%;
+        width: 90%;
     }
 
     .Title {
         font-size: 16px;
+    }
+
+    .Title-Return {
+        display: inline !important;
     }
 }

@@ -31,12 +31,18 @@ const NavItem = ({
           target={ target }
           rel = { rel }
           onClick={() => {}}
-          style={{ color: '#fff', marginBottom: -3 }}
+          style={{ 
+            color: '#fff', 
+            marginBottom: -3, 
+            display: 'flex', 
+            alignItems: 'center',
+          }}
           className="Nav-item"
         >
           <h3 className='Sidebar-nav-item'>
             { text }
           </h3>
+          <h3 className='Nav-Dot'>.</h3>
         </a>
       </div>
     </div>
