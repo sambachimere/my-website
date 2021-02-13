@@ -27,15 +27,14 @@ ${({ theme }) => css`
   label.Mui-focused,
   .PortfolioItem-projectName,
   .HomeHero-myWork-text,
-  .About-block-text-message 
+  .About-block-text-message,
+  .SocialNetworks-icon
   {
     background: ${theme.colors.background};
     color: ${theme.colors.black} !important;
   }
-  .Vertical-line,
-  {
-    background: ${theme.colors.backgroundLine},
-    color: ${theme.colors.textColor},
+  .Vertical-line {
+    background: ${theme.colors.backgroundLine};
   }
   .About-block-title,
   .Experience-title,

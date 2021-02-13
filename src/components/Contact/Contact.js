@@ -48,16 +48,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // sendEmail();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+    
+  //   setFormData({
+  //     name: '',
+  //     email: '',
+  //     phone: '',
+  //     message: '',
+  //   });
+  // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let frmData = new FormData(formData);
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(frmData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+      alert(error))
+
     setFormData({
       name: '',
       email: '',
       phone: '',
       message: '',
     });
-  };
+  }
+
   // const sendEmail = () => {
   //   Axios.post(
   //     'https://us-central1-my-website-52582.cloudfunctions.net/submit',
@@ -81,7 +101,13 @@ const Contact = () => {
     <div className="Contact" id="contact">
       <h1 className="Contact-block-title">Contact</h1>
       {/* <form className="Contact-form" onSubmit={handleSubmit}> */} 
-      <form className="Contact-form" onSubmit={handleSubmit}>
+      <form
+        className="Contact-form" 
+        name="contact" 
+        onSubmit={handleSubmit} 
+        method="POST"
+        data-netlify="true"
+      >
         <InputTextField
           style={{ width: '100%' }}
           label="Your Name"
