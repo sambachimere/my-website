@@ -2,21 +2,30 @@ import React from 'react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
+import { AppContext } from '../../AppProvider';
+
+import { ReactComponent as SDLogoBlack } from './../../assets/logos/sd-logo-black.svg';
+import { ReactComponent as SDLogoWhite } from './../../assets/logos/sd-logo-white.svg';
+
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 import './Header.css'
 
 const Header = () => {
+    const { themeMode } = React.useContext(AppContext);
+
     return (
         <div className="Header">
             <div className="Header-inner">
                 <div className="Left-block">
-                    <div className="Logo"></div>
-                    <div className="Title-block">
-                        <h3 className="Title">
-                            Samba Diaw, <br className="Title-Return" /> Full Stack Developer
-                        </h3>
-                    </div>
+                    {themeMode === 'darkTheme' ? (
+                        <SDLogoWhite  className="Logo" />
+                    ) : (
+                        <SDLogoBlack className="Logo"/>
+                    )}
+                    <h3 className="Title">
+                        Samba Diaw, <br className="Title-Return" /> Full Stack Developer
+                    </h3>
                 </div>      
 
                 <div className="Right-block">

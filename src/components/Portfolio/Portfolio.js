@@ -10,9 +10,9 @@ import CrwnShop from '../../assets/images/crwn-shop.png';
 import Natours from '../../assets/images/natours.png';
 import Forkify from '../../assets/images/forkify.png';
 
-import { ReactComponent as CRWNLogo } from './../../assets/images/crown-logo.svg';
-import NatoursLogo from './../../assets/images/natours-logo.png';
-import ForkifyLogo from './../../assets/images/forkify-logo.png';
+import { ReactComponent as CRWNLogo } from './../../assets/logos/crown-logo.svg';
+import NatoursLogo from './../../assets/logos/natours-logo.png';
+import ForkifyLogo from './../../assets/logos/forkify-logo.png';
 
 const Project1 = ({ 
   imageUrl, 

@@ -122,3 +122,9 @@
         width: 380px !important;
     }
 }
+
+@media (max-width: 320px) {
+    .Portfolio-project-image {
+        width: 270px !important;
+    }
+}

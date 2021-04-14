@@ -216,3 +216,13 @@
     display: inline;
   }
 }
+
+@media (max-width: 320px) {
+  .Sidebar-nav-item {
+    font-size: 10px !important;
+  }
+
+  .Nav-Dot {
+    font-size: 10px;
+  }
+}

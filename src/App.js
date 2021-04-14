@@ -3,6 +3,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 import './App.css';
+
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import About from './components/About/About';

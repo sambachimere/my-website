@@ -14,6 +14,17 @@
     margin-left: 30px;
 }
 
+.Left-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Logo {
+    height: 50px;
+    margin-right: 20px !important;
+}
+
 .Title {
     color: #fff;
     font-size: 30px;
@@ -56,5 +67,15 @@
 
     .Title-Return {
         display: inline !important;
+    }
+}
+
+@media (max-width: 365px) {
+    .Header-inner {
+        margin-top: 15px;
+    }
+    
+    .Title {
+        display: none;
     }
 }
