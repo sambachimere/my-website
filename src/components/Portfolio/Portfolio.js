@@ -8,8 +8,10 @@ import './Portfolio.css';
 // import Natours from '../../assets/images/natours.png';
 // import Forkify from '../../assets/images/forkify.png';
 import CrwnShop from '../../assets/images/crwn-shop.png';
+import Serin from '../../assets/images/serin-2.png';
 
 import { ReactComponent as CRWNLogo } from './../../assets/logos/crown-logo.svg';
+import SerinLogo from './../../assets/logos/serin-logo.png';
 
 const Project1 = ({ 
   imageUrl, 
@@ -17,7 +19,8 @@ const Project1 = ({
   name, 
   description, 
   marginBottom,
-  buttonTitle 
+  buttonTitle,
+  projectLink,
 }) => {
   return (
     <div className="Portfolio-project-block">
@@ -43,7 +46,7 @@ const Project1 = ({
           className="Portfolio-project-button" 
           style={{ marginBottom: marginBottom ? "100px" : "0px" }}
         >
-          <a href="https://crwn-s.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
             <p className="Portfolio-project-button-text">{buttonTitle}</p>
           </a>
         </div>
@@ -52,46 +55,49 @@ const Project1 = ({
   )
 }
 
-// const Project2 = ({ 
-//   children, 
-//   imageUrl, 
-//   name, 
-//   description, 
-//   marginBottom,
-//   buttonTitle 
-// }) => {
-//   return (
-//     <div className="Portfolio-project-block Portfolio-project-block-2">
-//       <div 
-//         className="Portfolio-project-description-block-2"
-//         style={{ marginRight: '30px' }}
-//       >
-//         <div className="Portfolio-project-title-block">
-//           { children }
-//           <div className="Portfolio-project-inner">
-//             <h3 className="Portfolio-project-title">{name}</h3>
-//           </div>
-//         </div>
-//         <p className="Portfolio-project-description">{description}</p>
+const Project2 = ({ 
+  children, 
+  imageUrl, 
+  name, 
+  description, 
+  marginBottom,
+  buttonTitle,
+  projectLink,
+}) => {
+  return (
+    <div className="Portfolio-project-block Portfolio-project-block-2">
+      <div 
+        className="Portfolio-project-description-block-2"
+        style={{ marginRight: '30px' }}
+      >
+        <div className="Portfolio-project-title-block">
+          { children }
+          <div className="Portfolio-project-inner">
+            <h3 className="Portfolio-project-title">{name}</h3>
+          </div>
+        </div>
+        <p className="Portfolio-project-description">{description}</p>
         
-//         <div className="Portfolio-project-button">
-//           <p className="Portfolio-project-button-text">{buttonTitle}</p>
-//         </div>
-//       </div>
+        <div className="Portfolio-project-button">
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
+            <p className="Portfolio-project-button-text">{buttonTitle}</p>
+          </a>
+        </div>
+      </div>
 
-//       <div 
-//         className="Portfolio-project-image-block"
-//         style={{ marginBottom: marginBottom ? "100px" : "0px" }}
-//       >
-//         <img 
-//           className="Portfolio-project-image" 
-//           src={imageUrl} 
-//           alt=""
-//         />
-//       </div>
-//     </div>
-//   )
-// }
+      <div 
+        className="Portfolio-project-image-block"
+        style={{ marginBottom: marginBottom ? "100px" : "0px" }}
+      >
+        <img 
+          className="Portfolio-project-image" 
+          src={imageUrl} 
+          alt=""
+        />
+      </div>
+    </div>
+  )
+}
 
 const Portfolio = () => {
   return (
@@ -103,9 +109,26 @@ const Portfolio = () => {
         description="An e-commerce web application."
         marginBottom={true}
         buttonTitle="LIVE APP"
+        // projectLink="https://crwn-s.herokuapp.com/"
       >
         <CRWNLogo className="Logo"/>
       </Project1>
+    {/* 
+      <Project2
+        imageUrl={Serin}
+        name="Serin Informatique"
+        description="A french informatique firm."
+        marginBottom={true}
+        buttonTitle="LIVE APP"
+        // projectLink="https://serin-website.webflow.io/"
+      >
+        <img 
+          className="Logo" 
+          src={SerinLogo} 
+          alt=""
+        />
+      </Project2>
+    */}
     </div>
   )
 }
