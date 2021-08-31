@@ -87,7 +87,7 @@ const Portfolio = () => {
         imageUrl={Natours}
         name="Natours"
         description="Natours is a web application which allows people to book excursions in nature."
-        technicalSkills="MongoDB, Express, React, Node.js."
+        technicalSkills="MongoDB, Express, Node.js, Pug."
         marginBottom={true}
         buttonTitle="LIVE APP"
         projectLink="https://natours-samba.herokuapp.com/"
