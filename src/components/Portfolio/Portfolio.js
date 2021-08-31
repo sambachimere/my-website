@@ -131,7 +131,7 @@ const Portfolio = () => {
           I got more on <a href="https://github.com/sambachimere" target="_blank" rel="noopener noreferrer" style={{ color: "#e1ae00" }}>github</a> :).
         </p>
         <p className="Portfolio-project-text Portfolio-project-bottom-text" style={{ marginBottom: 0 }}>Currently working on personnal projects,</p>
-        <p className="Portfolio-project-text Portfolio-project-bottom-text" style={{ margin: 0 }}>please get in touch if you are an entrepreneur who wants to learn more about them, or a tech lead who curious to audit the code.</p>
+        <p className="Portfolio-project-text Portfolio-project-bottom-text" style={{ margin: 0 }}>please get in touch if you are an entrepreneur who wants to learn more about them, or a tech lead who is curious to audit the code.</p>
       </div>
     </div>
   )
