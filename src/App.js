@@ -14,8 +14,6 @@ import Contact from './components/Contact/Contact';
 import MaltLogoWhite from "./assets/logos/malt-logo-white.png"  
 import MaltLogoBlack from "./assets/logos/malt-logo-black.png"  
 
-import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
-
 const App = () => {
   const { themeMode } = React.useContext(AppContext);
 
