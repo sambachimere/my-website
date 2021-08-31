@@ -16,20 +16,37 @@
 }
 
 .Portfolio-project-block {
-    /* margin-bottom: 100px; */
+    margin-right: 100px;
+    width: 1080px;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .Portfolio-project-image {
-    width: 523px !important;
+    width: 595px !important;
+    height: 333px;
     border-width: 1px;
     border-style: solid;
     border-color: #000;
 }
 
 .Portfolio-project-description-block-1 {
-    margin-left: 30px;
+    margin-left: 55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 333px;
+}
+
+.Portfolio-project-description-block-2 {
+    margin-right: 55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 333px;
 }
 
 .Portfolio-project-description-block-3 {
@@ -49,16 +66,23 @@
     color: #fff;
 }
 
-.Portfolio-project-description {
+.Portfolio-project-text {
     color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.Portfolio-project-bottom-text {
+    font-size: 25px;
 }
 
 .Portfolio-project-button {
+    /* width: 126px; */
     padding: 1px 50px;
     border-width: 1px;
     border-style: solid;
     border-color: #e1ae00;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     cursor: pointer;
 }
 
@@ -72,7 +96,16 @@
     letter-spacing: 5px;
 }
 
-@media (max-width: 1039px) {
+.Portfolio-More-Block {
+    padding-left: 20px;
+    border-left: dashed #e1ae00;
+}
+
+.Project-toggle {
+    display: none;
+}
+
+@media (max-width: 1410px) {
     .Portfolio-project-block {
         display: inline;
     }
@@ -87,16 +120,27 @@
 
     .Portfolio-project-image {
         width: 595px;
+        height: auto;
     }
 
     .Portfolio-project-description-block-1 {
         margin-left: 0px;
         margin-top: 20px;
+        display: flex;
+        justify-content: initial;
+    }
+
+    .Portfolio-project-text {
+        max-width: 595px;
     }
 
     .Portfolio-project-button {
-        margin-top: 3rem;
-        width: 173px;
+        margin-top: 1rem;
+        /* width: 173px; */
+    }
+
+    .Project-toggle {
+        display: block;
     }
 
 }
@@ -105,6 +149,10 @@
     .Portfolio {
         padding-left: 65px;
     }
+
+    .Portfolio-project-bottom-text {
+        font-size: 22px;
+    }    
 }
 
 @media (max-width: 767px) {
@@ -120,6 +168,11 @@
 
     .Portfolio-project-image {
         width: 380px !important;
+    }
+
+    .Portfolio-project-text {
+        max-width: 380px;
+        font-size: 18px;
     }
 }
 

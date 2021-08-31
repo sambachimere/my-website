@@ -6,6 +6,8 @@ import { AppContext } from '../../AppProvider';
 
 import { ReactComponent as SDLogoBlack } from './../../assets/logos/sd-logo-black.svg';
 import { ReactComponent as SDLogoWhite } from './../../assets/logos/sd-logo-white.svg';
+import MaltLogoWhite from "../../assets/logos/malt-logo-white.png"  
+import MaltLogoBlack from "../../assets/logos/malt-logo-black.png"  
 
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
@@ -55,6 +57,38 @@ const Header = () => {
                         >
                             <MdEmail className="SocialNetworks-icon" size={27}/>
                         </a>
+                        {themeMode === 'darkTheme' ? (
+                            <a
+                                href="https://www.malt.fr/profile/sambadiaw"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ margin: '0 15px' }}
+                                className="Social-Media"
+                            >
+                                <img 
+                                    style={{ margin: '0', height: 20 }}
+                                    className="Logo" 
+                                    src={MaltLogoWhite} 
+                                    alt=""
+                                />
+                            </a>
+                        ) : (
+                            <a
+                                href="https://www.malt.fr/profile/sambadiaw"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ margin: '0 15px' }}
+                                className="Social-Media"
+                            >
+                                <img 
+                                    style={{ margin: '0', height: 20 }}
+                                    className="Logo" 
+                                    src={MaltLogoBlack} 
+                                    alt=""
+                                />
+                            </a>
+                        )}
+                        
                         <div className="Dark-mode">
                             <ThemeSwitcher />
                         </div>

@@ -14,15 +14,15 @@ const Experience = () => {
       missions: [
         <span className="Experience-item-wrapper-inner">
           <IoIosArrowForward className="Experience-item-wrapper-arrow" />
-          <li>Website creation for : Serin Informatique, Select Academie</li>
+          <li>Website creation for : Serin Informatique, I conseil expertise assurances, Benga</li>
         </span>,
         <span className="Experience-item-wrapper-inner">
           <IoIosArrowForward className="Experience-item-wrapper-arrow" />
-          <li>Web apps : Toysly, Natours, CrownShop</li>
+          <li>Web apps : CrwnShop, Natours, Bahiti (work in progress)</li>
         </span>,
         <span className="Experience-item-wrapper-inner">
           <IoIosArrowForward className="Experience-item-wrapper-arrow" />
-          <li>Mobile apps : To be continued ...</li>
+          <li>Mobile apps : Kem (work in progress), TemuTew (work in progress)</li>
         </span>,
       ],
     },
@@ -37,9 +37,11 @@ const Experience = () => {
           <li>
             Prospecting for various french Start-up :{' '}
             <a href="https://hey-co.fr/">Hey-Co, </a>{' '}
+            <a href="https://hey-co.fr/">Adspower, </a>
             <a href="https://avocalix.com/">Avocalix, </a>{' '}
             <a href="https://e-savetime.fr/">Savetime, </a>{' '}
-            <a href="https://hey-co.fr/">Adspower</a> ...
+            <a href="https://hey-co.fr/">Phantom Buster, </a>
+            <a href="https://hey-co.fr/">Incenteev</a>
           </li>
         </span>,
         <span className="Experience-item-wrapper-inner">

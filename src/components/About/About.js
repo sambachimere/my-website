@@ -2,15 +2,18 @@ import React from 'react';
 import { IoIosArrowForward, IoMdArrowDropdown } from 'react-icons/io';
 
 import './About.css';
+import { AppContext } from '../../AppProvider';
 
 const About = () => {
+  const { themeMode } = React.useContext(AppContext);
+
   return (
     <div>
     <div className="About" id="about">
         <div className="About-block">
           <h1 className="About-block-title">About</h1>
           <p className="About-block-text">
-            I'm a business developer who loves coding. I started building apps in
+            Former business developer, I started building apps in
             august 2019, and since, I've never stopped.{' '}
             <a href="#contact">
               <span className="About-block-text-message">Drop me a message</span>
@@ -82,7 +85,11 @@ const About = () => {
             <div className="About-myWork">
               <div className="About-myWork-inner">
                 <h3 className="About-myWork-text">See how I can help!</h3>
-                <IoMdArrowDropdown className="About-myWork-icon" />
+                {themeMode === 'darkTheme' ? (
+                  <IoMdArrowDropdown className="About-myWork-icon" style={{ color: "#fff" }} />
+                  ) : (
+                  <IoMdArrowDropdown className="About-myWork-icon" style={{ color: "#000" }} />
+                )}
               </div>
             </div>
           </a>

@@ -1,6 +1,6 @@
 .Contact {
   padding-left: 300px;
-  padding-top: 150px;
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -80,5 +80,8 @@ div .Contact-phone {
 @media (max-width: 520px) {
   .Contact {
     padding-top: 75px;
+  }
+  .Submit-Button {
+    font-size: 18px !important;
   }
 }

@@ -7,7 +7,7 @@ ${({ theme }) => css`
   }
   .Title,
   .Portfolio-project-title,
-  .Portfolio-project-description,
+  .Portfolio-project-text,
   .Portfolio-project-image,
   .Sidebar-nav-item,
   .Nav-Dot,
@@ -54,6 +54,7 @@ ${({ theme }) => css`
     background: ${theme.colors.linearGradientBefore}
   }
   .Portfolio-project-button-text,
+  .About-myWork-text,
   .About-contact-text {
     color: ${theme.colors.textColor}
   }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { Axios, db } from '../../firebase/firebaseConfig';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField, Button } from '@material-ui/core/';
 
@@ -103,8 +102,9 @@ const Contact = () => {
           color="primary"
           fullWidth
           type="submit"
+          className="Submit-Button"
         >
-          Send
+          Send Your Message
         </SubmitButton>
       </form>
     </div>

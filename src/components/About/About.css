@@ -18,7 +18,7 @@
 
 .About-block-text {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 35px;
   text-align: justify;
   font-weight: lighter;
@@ -44,7 +44,7 @@
 .About-block-competency-text {
   color: #fff;
   margin: 0px 0px 0px 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: lighter;
 }
 
@@ -258,10 +258,10 @@
   color: #fff;
   font-weight: normal;
   letter-spacing: 1px;
+  font-size: 22px;
 }
 
 .About-myWork-icon {
-  color: #fff;
   font-size: 25px;
 }
 
