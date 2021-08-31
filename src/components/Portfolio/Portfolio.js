@@ -117,7 +117,7 @@ const Portfolio = () => {
       </div>
       <Project 
         imageUrl={Benga}
-        name="" 
+        name="Benga" 
         description="Benga is a french startup which puts in relation students willing to work as freelance business developers on their spare time, with other startups."
         technicalSkills="Webflow."
         marginBottom={true}
