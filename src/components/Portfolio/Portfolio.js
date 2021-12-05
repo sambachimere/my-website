@@ -44,7 +44,7 @@ const Portfolio = () => {
         technicalSkills="Figma, Webflow."
         marginBottom={true}
         buttonTitle="WEBSITE"
-        projectLink="https://serin-website.webflow.io/"
+        projectLink="https://serin.fr/"
       >
         <img 
           className="Logo" 
