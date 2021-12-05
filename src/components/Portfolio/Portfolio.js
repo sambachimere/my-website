@@ -9,7 +9,8 @@ import { Project, ProjectReverse } from './Projects/Projects';
 // import Natours from '../../assets/images/natours.png';
 // import Forkify from '../../assets/images/forkify.png';
 import CrwnShop from '../../assets/images/crwn-shop.png';
-import Serin from '../../assets/images/serin.png';
+// import Serin from '../../assets/images/serin.png';
+import Serin from '../../assets/images/serin-1.png';
 import Icea from '../../assets/images/icea.png';
 import Natours from '../../assets/images/natours.png';
 import Benga from '../../assets/images/benga.png';
@@ -59,7 +60,7 @@ const Portfolio = () => {
           technicalSkills="Figma, Webflow."
           marginBottom={true}
           buttonTitle="WEBSITE"
-          projectLink="https://serin-website.webflow.io/"
+          projectLink="https://serin.fr/"
         >
           <img 
             className="Logo" 
