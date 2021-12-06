@@ -61,7 +61,7 @@ const Sidebar = () => {
         <NavItem href="#contact" text="Contact" />
         <div className="Nav-item-resume">
           <NavItem 
-            href="https://drive.google.com/file/d/1Wq2iTfG8CsbYtWx413FLXGpdrbudwYGN/view?usp=sharing"
+            href="https://drive.google.com/file/d/1-FYXxaBnFonHlCyNeY5bXqf9tF8C-sS6/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer"
             text="Resume" 
